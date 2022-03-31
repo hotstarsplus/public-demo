@@ -1,0 +1,4 @@
+先写实体类 entity 
+再写uistore或store
+
+写interface

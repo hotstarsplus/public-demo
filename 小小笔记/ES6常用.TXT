@@ -1,0 +1,8 @@
+let为JavaScript新增了块级作用域。用它所声明的变量，只在let命令所在的代码块内有效。
+例如：（只在while块内生效）
+	let name = 'zach'
+ 	while (true) {
+	let name = 'obama'
+	console.log(name)  //obama
+   	break}
+	console.log(name)  //zach

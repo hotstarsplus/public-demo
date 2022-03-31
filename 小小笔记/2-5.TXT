@@ -1,0 +1,21 @@
+1、当要传进props时，要定义其类型，将所有的prop类型全都定义到interface，不要在使用any
+interface IDrawer {
+    visible:boolean;
+    dis:boolean;
+    callbackdata: (data: any) => void
+    username: string
+    age: string
+    address: string
+}
+//上为如何定义其类型
+//下为如何使用，应该是一个props和一个state，一外一内
+class DraewraAntd extends Component<IDrawer, any>{
+
+    constructor(props: IDrawer) {
+        super(props);
+
+2、bind函数，可以给往指定函数内绑定参数
+3、定义数据类型时，要带上声明，公共还是私密
+4、const不要乱用
+5、回调函数
+6、引用类型和基本类型
