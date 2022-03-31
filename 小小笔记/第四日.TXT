@@ -1,0 +1,97 @@
+1、公共类清除浮动，给父元素加
+
+.clearfix:after,.clearfix:before { 
+    content: "";
+    display: block;
+    clear: both;
+}
+
+2、思考如何实现弹性布局，flex还没有看，自己的理解要弹的地方不要框死，要用百分比。
+3、定义组件的基本套路
+	导入包
+	定义类
+	定义构造函数 (不一定要有)  constructor(){} 具体看React函数笔记
+	继承父类 (不一定要有)
+	绑定（不一定要）
+	render函数（必要要有）
+
+		render(){
+			return(
+				);
+			}
+
+	抛出组件
+
+例：
+
+import { Card } from "antd";
+import React,{Component} from "react";
+import './card.css';
+
+
+class CardAntd extends Component<any,any>{
+    constructor(props:any){
+        super(props);
+
+        this.onClickhref = this.onClickhref.bind(this);
+    }
+
+    onClickhref(){
+
+    }
+
+    render(){
+        // 因为都是从外界传来的值，组件内部不需要给予变化，用prop来做就好
+        //如果是自身用值，可用let定义
+        const {hrefa} = this.props;
+        const {cardTitle} = this.props;
+        const {cardExplain} = this.props;
+        return(
+            <div className="cfloat">
+                    <a href={hrefa}>
+                    <Card>
+                    <Card.Grid className="gridStyle">
+                    <div className="cardTitleStyle">
+                    {cardTitle}
+                    </div>
+                    <div className="cardEStyle">
+                    {cardExplain}
+                    </div>
+                    </Card.Grid>
+                    </Card>
+                    </a>              
+            </div>
+        );
+    }
+}
+
+export default CardAntd;
+
+4、如很长一字段，可用常量来定义
+	        let chandao = "http://192.168.4.62/zentao/user-login-L3plbnRhby8=.html";
+     定义完成后使用{chandao}来调用
+	        hrefa={chandao}
+5、定义组件中的prop
+	const {组件名} = this.props;
+	const {cardExplain} = this.props;
+     定义完成后同样使用{cardExplain}来调用
+6、定义组件中的state（或许有错误）
+	在构造函数constructor(){}内进行初始化
+
+this.state = {count(state名): props.initValue(不需要分号不是很理解)  }
+//通过props获得传入prop值，初始化state的值
+	
+如何定义多个state
+——————————this.state = {
+       ———————— stateName1 : stateValue1,
+      ————————  stateName2 : stateValue2
+   —————————————— }
+
+使用this.setState(){
+	stateName1 : stateValue1,
+}
+写在类中，一定记得绑定bind所写的类，不然找不到。
+
+
+refs？？？？？？
+ 

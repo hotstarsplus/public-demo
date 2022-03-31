@@ -1,0 +1,6 @@
+1、类型注解；
+2、接口；interface
+constructor(public firstName, public middleInitial, public lastName) {
+        this.fullName = firstName + " " + middleInitial + " " + lastName;
+    }
+在构造函数的参数上使用public等同于创建了同名的成员变量。

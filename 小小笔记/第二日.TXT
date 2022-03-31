@@ -1,0 +1,11 @@
+1.定义React 组件继承React.Component——是所有组件的基类，先引入包再继承类
+2.create-react-app h_myapp --template typescript 创建脚手架
+3.npm run 用 yarn替代效率高
+4.在使用JSX 的范围内必须要有React，TSX不需要？？
+5.jsx、tsx中是onClick，html页面中是onclick
+6.React 的组件可以把JavaScript 、HTML 和css 的功能在一个文件中，实现真正的组件封装。
+7.prop是组件的对外接口，state是组件的内部状态，对外使用prop（相当于传参？），内部用state。
+
+
+函数：
+constructor：每个类的构造函数，主要两个目的。1初始化state，2绑定成员函数的this环境

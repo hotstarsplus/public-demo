@@ -1,0 +1,6 @@
+1、 <a href={hrefa} target='_blank' rel="noreferrer">
+	在新的页面打开 a 标签
+2、写样式时不要混乱，要思路清晰
+3、在style中写样式，和在css中写样式有些许的不同。研究flex布局
+ style={{height:14,padding:'16px 0px 16px 0px',display:'flex',justifyContent:'space-between',alignItems:"center"}}
+4、npm install -- yarn add

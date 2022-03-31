@@ -1,0 +1,5 @@
+函数：
+1、constructor：有state就要有。每个类的构造函数，主要两个目的。1初始化state，2绑定成员函数的this环境;
+2、render : 一个React 一定要实现render 函数，render函数是一个纯函数，完全根据this.state 和this.props 来决定返回的结果,不要引起状态的变化既是不要用this.setState();返回值用于构造DOM树。
+3、shouldComponentUpdate: shouldComponentUpdate函数决定了一个组件什么时候不需要渲染。和render()函数时唯二两个需要返回值的函数，返回结果为布尔值。
+4、componentWillUnmount：卸载函数

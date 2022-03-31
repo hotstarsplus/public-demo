@@ -1,0 +1,8 @@
+1.安装
+	npm install -S react-router
+
+写好组件，组件要如何加载由route配置？？？
+
+2.应用的 UI 以盒子中嵌套盒子的方式来表现
+当前使用版本写法：
+	<HashRouter>是外层包裹，为了获取URL地址

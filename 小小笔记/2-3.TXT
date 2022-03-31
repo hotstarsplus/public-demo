@@ -1,0 +1,36 @@
+数组中是一个个对象，对象要用{}，
+对象中可以是一个个数组[].
+
+1、使用flex布局（确实比float方便，起码不用清浮动了）
+	display: flex;
+    	flex-direction: row; /* 左对齐 */
+    	flex-wrap: wrap;    /* 自动换行，第一行在上，使用float不需要设置换行，放不下就自动下去 */
+2、overflow: auto; （常用）如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+3、z-index 层叠时设置优先级
+
+4、map遍历的使用方法
+ const carditem = [cardinita,cardinitb,cardinitc] // 定义一个数组，数组中是对象
+
+ const cardinita = {
+            navtitle: '示例',
+            cardantd:[
+                        {
+                        hrefa: zte,
+                        cardtitle: 'zte 类库',
+                        cardexpl: 'ZenTao Extend 禅道扩展'
+                        },
+                     ]
+                    }
+
+ {carditem.map((item:any,index:number)=>({item.navtitle}）//item就是里面的项，就是每一个cardinita
+					   //item.navtitle就是每一个cardinita中的navtitle
+{item.cardantd.map((abc:any)=>
+                                {abc.hrefa} {abc.cardtitle} {abc.cardexpl} //双层循环取东西
+                            )}
+
+5、// 不绑定只能指向空，或者使用箭头函数 onCClose=()=>{}可以不绑定
+        写在constructor中。
+        this.showDrawer = this.showDrawer.bind(this);
+        this.onClose = this.onClose.bind(this);
+
+6、搞不定就用state

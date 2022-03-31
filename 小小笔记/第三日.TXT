@@ -1,0 +1,12 @@
+2.4组件向外传递数据，看不懂，语法问题。。
+
+react框架主要是动态加载组件以及多个组件之间进行嵌套，最后形成一个大的集成的完善功能的组件。？
+
+1.innerHTML属性
+var a=atr.rows[i].col[0].innerHTML;这是获取对象表格中的属性，
+document.getElementById(“xuhao”).innerHTML=a;这是设置所获得的id组件的中所要修改的内容
+2、Mount装载，Update更新，Unmount卸载
+3、JavaScript reduce() 计算数组元素相加后的总和
+4、const 定义创建一个常量。
+5、render()函数中的return是小括号()。
+6、导入包的时候一定要看清楚，是Component不是component

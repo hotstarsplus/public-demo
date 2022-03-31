@@ -1,0 +1,19 @@
+不优化使用：
+1、安装antd  打开建立的React控制台 
+	
+	yarn add antd
+
+
+2、在React项目的建立自己的css文件并引入 Antd的css
+
+	@import '~antd/dist/antd.css';（import导入就不再更改，所以不用link）
+
+
+3、打开网站https://ant.design/查看文档如何使用，并改写代码符合项目规范：
+
+	例如：使用Button： 
+
+		1、在对应的组件中引入Antd        import { Button } from 'antd';
+
+
+		2、<Button type="primary">Primary</Button>
