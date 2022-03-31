@@ -1,3 +1,3 @@
 <code>
-    echo "master-dev"
+    echo "master"
 </code>
